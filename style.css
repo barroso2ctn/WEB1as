@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 150%;
+  color: #4A3B31;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+body {
+  background-color: #EAE0D5;
+  background-image: url(assets/imgCopcake.jpg); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#page {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 800px;
+  padding: 24px;
+  background-color: #FAF0E6;
+  border-radius: 24px;
+  margin: 48px auto 28px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#page > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 24px;
+}
+
+main {
+  padding: 24px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+#about p,
+#preparation p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#about p + p {
+  margin-top: 12px;
+}
+
+h1 {
+  line-height: 120%; /* Ajusta  título */
+  font-size: 48px; /* Aumenta fonte do título */
+  color: #8B4513; /*cor/título */
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 28px; /*fonte do subtítulo */
+  color: #A0522D;
+  margin-bottom: 8px;
+}
+
+ul {
+  margin-left: 32px;
+  list-style-type: square;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid #F0E8C2;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  color: #FAF0E6; /* Cor do texto do rodapé */
+  background-color: #8B4513;
+  text-align: center;
+  padding: 24px 0;
+  border-radius: 0 0 24px 24px;
+  margin-top: 24px;
+}
+
+footer img {
+  vertical-align: middle;
+  width: 1.2em;
+  height: 1.2em;
+}
